@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MovieCell.h
 //  Movies
 //
 //  Created by Narendra Thapa on 2016-02-01.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface MovieCell : UICollectionViewCell
+
+@property (weak, nonatomic) IBOutlet UIImageView *movieImageView;
 
 
 @end
-

@@ -17,6 +17,9 @@
 		482B87EA1C5FD05100611EA0 /* MovieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 482B87E91C5FD05100611EA0 /* MovieManager.m */; };
 		482B87ED1C5FE21300611EA0 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 482B87EC1C5FE21300611EA0 /* MovieCell.m */; };
 		482B87F01C5FF43100611EA0 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482B87EF1C5FF43100611EA0 /* MovieDetailViewController.m */; };
+		482B87F31C60022B00611EA0 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 482B87F21C60022B00611EA0 /* Review.m */; };
+		482B87F61C6005E700611EA0 /* ReviewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 482B87F51C6005E700611EA0 /* ReviewManager.m */; };
+		482B87F81C60199D00611EA0 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 482B87F71C60199D00611EA0 /* maxresdefault.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,11 @@
 		482B87EC1C5FE21300611EA0 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		482B87EE1C5FF43100611EA0 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		482B87EF1C5FF43100611EA0 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		482B87F11C60022B00611EA0 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
+		482B87F21C60022B00611EA0 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		482B87F41C6005E700611EA0 /* ReviewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewManager.h; sourceTree = "<group>"; };
+		482B87F51C6005E700611EA0 /* ReviewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewManager.m; sourceTree = "<group>"; };
+		482B87F71C60199D00611EA0 /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +87,13 @@
 				482B87E81C5FD05100611EA0 /* MovieManager.h */,
 				482B87E91C5FD05100611EA0 /* MovieManager.m */,
 				482B87D71C5FCA2100611EA0 /* Main.storyboard */,
+				482B87F71C60199D00611EA0 /* maxresdefault.jpg */,
 				482B87EE1C5FF43100611EA0 /* MovieDetailViewController.h */,
 				482B87EF1C5FF43100611EA0 /* MovieDetailViewController.m */,
+				482B87F11C60022B00611EA0 /* Review.h */,
+				482B87F21C60022B00611EA0 /* Review.m */,
+				482B87F41C6005E700611EA0 /* ReviewManager.h */,
+				482B87F51C6005E700611EA0 /* ReviewManager.m */,
 				482B87EB1C5FE21300611EA0 /* MovieCell.h */,
 				482B87EC1C5FE21300611EA0 /* MovieCell.m */,
 				482B87DA1C5FCA2100611EA0 /* Assets.xcassets */,
@@ -157,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				482B87DE1C5FCA2100611EA0 /* LaunchScreen.storyboard in Resources */,
+				482B87F81C60199D00611EA0 /* maxresdefault.jpg in Resources */,
 				482B87DB1C5FCA2100611EA0 /* Assets.xcassets in Resources */,
 				482B87D91C5FCA2100611EA0 /* Main.storyboard in Resources */,
 			);
@@ -169,11 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482B87F61C6005E700611EA0 /* ReviewManager.m in Sources */,
 				482B87D61C5FCA2100611EA0 /* ViewController.m in Sources */,
 				482B87F01C5FF43100611EA0 /* MovieDetailViewController.m in Sources */,
 				482B87D31C5FCA2100611EA0 /* AppDelegate.m in Sources */,
 				482B87ED1C5FE21300611EA0 /* MovieCell.m in Sources */,
 				482B87E71C5FD04000611EA0 /* Movie.m in Sources */,
+				482B87F31C60022B00611EA0 /* Review.m in Sources */,
 				482B87EA1C5FD05100611EA0 /* MovieManager.m in Sources */,
 				482B87D01C5FCA2100611EA0 /* main.m in Sources */,
 			);

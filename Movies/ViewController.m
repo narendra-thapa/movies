@@ -16,11 +16,9 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) MovieManager *movieManager;
-
 @property (nonatomic, strong) UICollectionViewFlowLayout *movieLayout;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *collectionViewLayout;
 
 
@@ -35,7 +33,7 @@
     self.movieManager = [[MovieManager alloc] init];
     
     self.movieLayout = [[UICollectionViewFlowLayout alloc] init];
-    self.movieLayout.itemSize = CGSizeMake(105, 200);
+    self.movieLayout.itemSize = CGSizeMake(300, 100);
     self.movieLayout.minimumInteritemSpacing = 2;
     self.movieLayout.minimumLineSpacing = 3;
     self.movieLayout.headerReferenceSize = CGSizeMake(150, 30);
@@ -77,11 +75,8 @@
         
         
         NSIndexPath *movieSelected = [self.collectionView indexPathForCell:sender];
-        
         Movie *selectedMovie = [self.movieManager returnAMovie:movieSelected];
-        
         MovieDetailViewController *movieDVC = (MovieDetailViewController *)[segue destinationViewController];
-        
         movieDVC.movieSelected = selectedMovie;
         //[movieDVC showMovieImage:selectedMovie];
         
@@ -105,6 +100,9 @@
     MovieCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionCell" forIndexPath:indexPath];
     Movie *currentMovie = [self.movieManager returnAMovie:indexPath];
     cell.movieImageView.image = currentMovie.movieThumbnail;
+    cell.movieTitle.text = currentMovie.title;
+    cell.movieYear.text = [NSString stringWithFormat:@"(%lu)", (unsigned long)currentMovie.year];
+    cell.movieRating.text = [NSString stringWithFormat:@"Average Rating: %.1f%%", currentMovie.averageRating];
     return cell;
 }
 

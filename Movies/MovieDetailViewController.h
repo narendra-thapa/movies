@@ -13,6 +13,9 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *detailMovieImage;
 @property (weak, nonatomic) IBOutlet UILabel *movieTitle;
+@property (weak, nonatomic) IBOutlet UILabel *detailYear;
+@property (weak, nonatomic) IBOutlet UILabel *detailSynopsis;
+
 
 @property (nonatomic, strong) Movie *movieSelected;
 

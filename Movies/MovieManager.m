@@ -9,12 +9,6 @@
 #import "MovieManager.h"
 #import "Movie.h"
 
-@interface MovieManager ()
-
-@property (nonatomic, strong) Movie *movieDetails;
-
-@end
-
 
 @implementation MovieManager
 
@@ -38,11 +32,13 @@
         movie.synopsis = movies[@"synopsis"];
         movie.ratings = movies[@"ratings"];
         movie.movieThumbnailLink = movies[@"posters"][@"original"];
+        movie.averageRating = ([movie.ratings[@"critics_score"] integerValue] + [movie.ratings[@"audience_score"] integerValue]) / 2.0;
         NSURL *poster = [NSURL URLWithString:movie.movieThumbnailLink];
         NSData *imageData = [NSData dataWithContentsOfURL:poster];
         movie.movieThumbnail = [UIImage imageWithData:imageData];
+        
         NSString *tempReviewLink = movies[@"links"][@"reviews"];
-        movie.reviewsURL = (NSURL *)[tempReviewLink stringByAppendingString:@"?apikey=c9zzxwtuc3q2tftqata3k59w"];
+        movie.reviewsURL = [NSURL URLWithString:[tempReviewLink stringByAppendingString:@"?apikey=c9zzxwtuc3q2tftqata3k59w"]];
         
         [self.movieList addObject:movie];
     }

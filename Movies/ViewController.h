@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MovieManager;
 
 @interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-
 
 @end
 

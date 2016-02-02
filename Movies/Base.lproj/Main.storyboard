@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Movie List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -106,7 +106,9 @@
                             <constraint firstItem="nD6-aO-4Uo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yca-aw-x1e"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="oat-US-UoC"/>
+                    <navigationItem key="navigationItem" title="Movie List" id="oat-US-UoC">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="HeU-pt-Ooy"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="nD6-aO-4Uo" id="Ygs-dX-eqi"/>
                         <outlet property="collectionViewLayout" destination="nO0-Ye-a6I" id="TZU-7B-pml"/>
@@ -116,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="591" y="366"/>
         </scene>
-        <!--Movie Detail View Controller-->
+        <!--Details & Reviews-->
         <scene sceneID="xlY-j6-4IX">
             <objects>
                 <viewController id="WTl-cJ-qNs" customClass="MovieDetailViewController" sceneMemberID="viewController">
@@ -244,7 +246,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="98v-IC-gGz"/>
+                    <navigationItem key="navigationItem" title="Details &amp; Reviews" id="98v-IC-gGz"/>
                     <connections>
                         <outlet property="reviewCollectionView" destination="gRt-pu-ZqJ" id="Iio-Ds-9GT"/>
                         <outlet property="reviewFLowLayout" destination="ihQ-CF-aq6" id="oCy-UP-XpD"/>

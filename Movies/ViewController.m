@@ -36,7 +36,7 @@
     self.movieLayout.itemSize = CGSizeMake(300, 100);
     self.movieLayout.minimumInteritemSpacing = 2;
     self.movieLayout.minimumLineSpacing = 3;
-    self.movieLayout.headerReferenceSize = CGSizeMake(150, 30);
+    //self.movieLayout.headerReferenceSize = CGSizeMake(150, 30);
     
     self.collectionView.collectionViewLayout = self.movieLayout;
     

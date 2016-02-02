@@ -106,9 +106,7 @@
                             <constraint firstItem="nD6-aO-4Uo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yca-aw-x1e"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Movie List" id="oat-US-UoC">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="HeU-pt-Ooy"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Movie List" id="oat-US-UoC"/>
                     <connections>
                         <outlet property="collectionView" destination="nD6-aO-4Uo" id="Ygs-dX-eqi"/>
                         <outlet property="collectionViewLayout" destination="nO0-Ye-a6I" id="TZU-7B-pml"/>
@@ -246,7 +244,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Details &amp; Reviews" id="98v-IC-gGz"/>
+                    <navigationItem key="navigationItem" title="Details &amp; Reviews" id="98v-IC-gGz">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="x5V-CZ-r7D">
+                            <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="reviewCollectionView" destination="gRt-pu-ZqJ" id="Iio-Ds-9GT"/>
                         <outlet property="reviewFLowLayout" destination="ihQ-CF-aq6" id="oCy-UP-XpD"/>
@@ -261,9 +263,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DQ6-KR-Itw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i9N-BR-BA6">
+                    <navigationBar key="navigationBar" opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" id="i9N-BR-BA6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.97260671854019165" green="0.97359186410903931" blue="0.91518259048461914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.67820674180984497" green="0.085698030889034271" blue="0.24759891629219055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.97260671854019165" green="0.97359186410903931" blue="0.91518259048461914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

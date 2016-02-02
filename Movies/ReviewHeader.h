@@ -14,6 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *reviewHeaderImage;
 @property (weak, nonatomic) IBOutlet UILabel *reviewHeaderYear;
 @property (weak, nonatomic) IBOutlet UILabel *reviewHeaderSynopsis;
-
+@property (weak, nonatomic) IBOutlet UILabel *reviewHeaderRating;
 
 @end

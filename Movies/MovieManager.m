@@ -32,6 +32,7 @@
         movie.synopsis = movies[@"synopsis"];
         movie.ratings = movies[@"ratings"];
         movie.movieThumbnailLink = movies[@"posters"][@"original"];
+        movie.mpaRating = movies[@"mpaa_rating"];
         movie.averageRating = ([movie.ratings[@"critics_score"] integerValue] + [movie.ratings[@"audience_score"] integerValue]) / 2.0;
         NSURL *poster = [NSURL URLWithString:movie.movieThumbnailLink];
         NSData *imageData = [NSData dataWithContentsOfURL:poster];

@@ -9,6 +9,7 @@
 #import "ReviewManager.h"
 #import "Review.h"
 
+
 @implementation ReviewManager
 
 - (instancetype)init
@@ -28,7 +29,7 @@
         
         review.critic = reviews[@"critic"];
         review.date = reviews[@"date"];
-        review.score = reviews[@"score"];
+        review.score = reviews[@"original_score"];
         review.freshness = reviews[@"freshness"];
         review.publication = reviews[@"publication"];
         review.quote = reviews[@"quote"];
@@ -38,9 +39,15 @@
     }
 }
 
-- (Review *)returnAReview:(NSIndexPath *)indexPath {
-    return [self.reviewList objectAtIndex:indexPath.row];
+//- (Review *)returnAReview:(NSIndexPath *)indexPath {
+//    indexPath
+//    //return [self.reviewList objectAtIndex:indexPath.r];
+//}
+
+- (Review *)returnAReview:(NSInteger)indexPath {
+    return [self.reviewList objectAtIndex:indexPath];
 }
+
 
 - (NSUInteger)returnReviewCount {
     return self.reviewList.count;

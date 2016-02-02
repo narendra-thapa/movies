@@ -16,7 +16,7 @@
 
 - (void)loadReviewsToArray;
 
-- (Review *)returnAReview:(NSIndexPath *)indexPath;
+- (Review *)returnAReview:(NSInteger)indexPath;
 
 - (NSUInteger)returnReviewCount;
 

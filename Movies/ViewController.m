@@ -78,7 +78,6 @@
         Movie *selectedMovie = [self.movieManager returnAMovie:movieSelected];
         MovieDetailViewController *movieDVC = (MovieDetailViewController *)[segue destinationViewController];
         movieDVC.movieSelected = selectedMovie;
-        //[movieDVC showMovieImage:selectedMovie];
         
     }
 }

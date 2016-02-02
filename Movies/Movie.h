@@ -12,8 +12,9 @@
 @interface Movie : NSObject
 
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, assign) NSUInteger year;
 @property (nonatomic, copy) NSString *synopsis;
+
+@property (nonatomic, assign) NSUInteger year;
 @property (nonatomic, strong) NSDictionary *ratings;
 @property (nonatomic, assign) float averageRating;
 
@@ -21,7 +22,5 @@
 @property (nonatomic, strong) UIImage *movieThumbnail;
 
 @property (nonatomic, strong) NSURL *reviewsURL;
-
-
 
 @end

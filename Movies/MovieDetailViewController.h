@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "Movie.h"
 
-@interface MovieDetailViewController : UIViewController
+@interface MovieDetailViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UIImageView *detailMovieImage;
 @property (weak, nonatomic) IBOutlet UILabel *movieTitle;
 @property (weak, nonatomic) IBOutlet UILabel *detailYear;
 @property (weak, nonatomic) IBOutlet UILabel *detailSynopsis;
+
 
 
 @property (nonatomic, strong) Movie *movieSelected;

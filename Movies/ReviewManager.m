@@ -38,5 +38,11 @@
     }
 }
 
+- (Review *)returnAReview:(NSIndexPath *)indexPath {
+    return [self.reviewList objectAtIndex:indexPath.row];
+}
 
+- (NSUInteger)returnReviewCount {
+    return self.reviewList.count;
+}
 @end

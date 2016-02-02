@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Review;
 
 @interface ReviewManager : NSObject
 
@@ -14,5 +15,9 @@
 @property (nonatomic, strong) NSDictionary *reviewDictionary;
 
 - (void)loadReviewsToArray;
+
+- (Review *)returnAReview:(NSIndexPath *)indexPath;
+
+- (NSUInteger)returnReviewCount;
 
 @end
